@@ -5,42 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المكتبة الأزهرية - الفرقة الثانية دراسات عليا</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- استيراد خط 'الأميري' و 'عربي' ليعطي الطابع التراثي -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
-    <!-- أيقونات للمظهر الجمالي -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
         /* إعدادات الخطوط والألوان الخاصة */
         body {
             font-family: 'Amiri', serif;
-            background-color: #fdfbf7; /* لون ورق البردي الفاتح */
+            background-color: #fdfbf7;
             color: #2c2c2c;
-            overflow-x: hidden; /* لمنع الشريط الجانبي أثناء الانيميشن */
+            overflow-x: hidden;
         }
         
         .font-ruqaa {
             font-family: 'Aref Ruqaa', serif;
         }
 
-        /* نمط زخرفي إسلامي بسيط للخلفية */
         .islamic-bg {
             background-color: #fdfbf7;
             background-image: radial-gradient(#e5e0d3 1px, transparent 1px);
             background-size: 20px 20px;
         }
 
-        /* تصميم إطار الكارت المزخرف */
         .card-ornament {
-            border: 2px solid #c5a059; /* ذهبي معتق */
+            border: 2px solid #c5a059;
             border-radius: 8px;
             position: relative;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             background: #fff;
-            /* بداية الانيميشن للكروت */
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 0.8s ease-out forwards;
@@ -49,10 +44,9 @@
         .card-ornament:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            border-color: #1a472a; /* أخضر أزهري عند التحويم */
+            border-color: #1a472a;
         }
 
-        /* تأخير ظهور الكروت لتظهر بتتابع جميل */
         .delay-1 { animation-delay: 0.1s; }
         .delay-2 { animation-delay: 0.2s; }
         .delay-3 { animation-delay: 0.3s; }
@@ -61,13 +55,9 @@
         .delay-6 { animation-delay: 0.6s; }
 
         @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        /* زخرفة الزوايا */
         .corner-decoration {
             position: absolute;
             width: 15px;
@@ -83,17 +73,14 @@
         .bottom-left { bottom: 4px; left: 4px; border-width: 0 0 2px 2px; }
 
         .card-ornament:hover .corner-decoration {
-            width: 25px;
-            height: 25px;
+            width: 25px; height: 25px;
         }
 
-        /* عناوين مميزة */
         .header-title {
-            color: #1a472a; /* الأخضر الأزهري */
+            color: #1a472a;
             text-shadow: 1px 1px 0px #c5a059;
         }
 
-        /* فاصل زخرفي */
         .divider-ornament {
             display: flex;
             align-items: center;
@@ -112,13 +99,11 @@
 
         @keyframes fadeIn { to { opacity: 1; } }
 
-        /* تصميم خاص لقسم التحديثات */
         .updates-section {
             background: linear-gradient(to bottom right, #ffffff, #fcf8ec);
             border-left: 4px solid #c5a059;
         }
 
-        /* صندوق تنبيهات الدكاترة داخل الكروت */
         .doctor-alert-box {
             background-color: #fff5f5;
             border-right: 3px solid #e53e3e;
@@ -126,35 +111,35 @@
             margin-bottom: 1rem;
             border-radius: 4px;
         }
+        
+        /* تنسيق خاص للينكات */
+        .link-hover:hover {
+            text-decoration: underline;
+            color: #1a472a;
+        }
     </style>
 </head>
 <body class="islamic-bg min-h-screen flex flex-col">
 
-    <!-- رأس الصفحة -->
     <header class="bg-[#1a472a] text-white py-8 border-b-4 border-[#c5a059] shadow-lg relative overflow-hidden">
-        <!-- انيميشن للخلفية -->
         <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')] animate-pulse"></div>
         
         <div class="container mx-auto px-4 text-center relative z-10 transform transition-all duration-1000 translate-y-[-20px] opacity-0 animate-[fadeInUp_1s_ease-out_forwards]">
             <div class="flex justify-center mb-4">
-                <!-- أيقونة مسجد أو قبة -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c5a059" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></svg>
             </div>
             <h1 class="text-3xl md:text-5xl font-bold font-ruqaa mb-2 text-[#fdfbf7]">الدراسات العليا - الفرقة الثانية</h1>
-            <p class="text-[#c5a059] text-xl mt-2 font-ruqaa">جامعة الأزهر الشريف</p>
+            <p class="text-[#c5a059] text-xl mt-2 font-ruqaa">جامعة الأزهر الشريف - أمانة القاهرة (بنين)</p>
             <p class="text-gray-300 text-sm mt-4 opacity-80 max-w-2xl mx-auto">
                 "وَمَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ"
             </p>
         </div>
     </header>
 
-    <!-- المحتوى الرئيسي -->
     <main class="flex-grow container mx-auto px-4 py-10">
         
-        <!-- قسم ما وصلنا إليه (متابعة المنهج) -->
-        <div class="max-w-4xl mx-auto mb-12">
+        <div class="max-w-5xl mx-auto mb-12">
             <div class="card-ornament updates-section p-0 overflow-hidden shadow-md delay-1">
-                <!-- شريط العنوان للقسم -->
                 <div class="bg-[#1a472a] p-3 flex items-center justify-between">
                     <h3 class="text-lg md:text-xl font-bold text-[#c5a059] font-ruqaa flex items-center gap-2">
                         <i data-lucide="signpost" class="w-5 h-5 text-white"></i>
@@ -163,9 +148,7 @@
                     <span class="bg-[#c5a059] text-[#1a472a] text-xs font-bold px-2 py-1 rounded">تحديث أسبوعي</span>
                 </div>
 
-                <!-- محتوى الجدول -->
                 <div class="p-4 md:p-6 relative">
-                    <!-- زخرفة خلفية -->
                     <i data-lucide="feather" class="absolute bottom-0 left-4 w-24 h-24 text-[#c5a059] opacity-10 transform -rotate-12 pointer-events-none"></i>
                     
                     <div class="overflow-x-auto">
@@ -183,9 +166,17 @@
                                     <td class="py-3"><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-bold">صـ 45</span> <span class="text-sm text-gray-500 mr-1">(باب الكندي)</span></td>
                                     <td class="py-3 text-red-600 text-sm">من صـ 30 إلى 35</td>
                                 </tr>
-                                <tr class="border-b border-dashed border-gray-200 hover:bg-gray-50 transition-colors">
-                                    <td class="py-3 font-bold pl-4 text-[#1a472a]">التوحيد وعلم الكلام</td>
-                                    <td class="py-3"><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-bold">صـ 62</span></td>
+                                <tr class="border-b border-dashed border-gray-200 bg-[#fdfbe9] hover:bg-amber-50 transition-colors">
+                                    <td class="py-3 font-bold pl-4 text-[#1a472a] flex items-center gap-2">
+                                        التوحيد وعلم الكلام
+                                        <span class="text-[10px] bg-red-500 text-white px-1 rounded animate-pulse">جديد</span>
+                                    </td>
+                                    <td class="py-3">
+                                        <div class="flex flex-col">
+                                            <span><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-bold">صـ 38</span> (كتاب شرح المقاصد)</span>
+                                            <span class="text-xs text-gray-500 mt-1">توقفنا بعد الرد على الشبهة الثانية</span>
+                                        </div>
+                                    </td>
                                     <td class="py-3 text-gray-400 text-sm">-</td>
                                 </tr>
                                 <tr class="border-b border-dashed border-gray-200 hover:bg-gray-50 transition-colors">
@@ -206,252 +197,129 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="mt-4 text-xs text-gray-500 flex items-center gap-1">
-                        <i data-lucide="info" class="w-3 h-3"></i> يتم تحديث هذا الجدول بناءً على آخر محاضرة ألقيت.
-                    </div>
                 </div>
             </div>
         </div>
 
         <div class="text-center mb-10 opacity-0 animate-[fadeIn_1s_ease-out_0.4s_forwards]">
             <h2 class="text-2xl md:text-3xl font-bold header-title mb-3">المقررات الدراسية وتنبيهات الدكاترة</h2>
-            <p class="text-gray-600">كل ما يخص المواد من تنبيهات وكتب وتلخيصات</p>
             <div class="divider-ornament">
                 <span class="text-2xl text-[#c5a059]">۞</span>
             </div>
         </div>
 
-        <!-- شبكة المواد -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="subjects-grid">
             
-            <!-- مادة 1: الفلسفة -->
             <div class="card-ornament p-6 bg-white delay-2">
-                <div class="top-right corner-decoration"></div>
-                <div class="top-left corner-decoration"></div>
-                <div class="bottom-right corner-decoration"></div>
-                <div class="bottom-left corner-decoration"></div>
-
+                <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
                 <div class="text-center mb-4">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]">
-                        <i data-lucide="brain-circuit" class="w-8 h-8"></i>
-                    </div>
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="brain-circuit" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">الفلسفة الإسلامية</h3>
                 </div>
-
-                <!-- قسم تنبيهات الدكاترة -->
                 <div class="doctor-alert-box">
-                    <h4 class="text-red-700 font-bold text-sm flex items-center gap-2 mb-1">
-                        <i data-lucide="megaphone" class="w-4 h-4"></i> تنبيهات الدكتور
-                    </h4>
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        نبه الدكتور على ضرورة حفظ مصطلحات الكندي صـ 22 للأهمية في الامتحان.
-                    </p>
+                    <h4 class="text-red-700 font-bold text-sm flex items-center gap-2 mb-1"><i data-lucide="megaphone" class="w-4 h-4"></i> تنبيهات الدكتور</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed">نبه الدكتور على ضرورة حفظ مصطلحات الكندي صـ 22 للأهمية.</p>
                 </div>
-
-                <div class="space-y-3">
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="book" class="w-4 h-4 text-[#c5a059]"></i> الكتب المقررة</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="file-text" class="w-4 h-4 text-[#c5a059]"></i> التلخيصات</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="mic" class="w-4 h-4 text-[#c5a059]"></i> التفريغات</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="text-center text-sm text-gray-400 mt-4">قريباً إضافة المزيد...</div>
             </div>
 
-            <!-- مادة 2: التوحيد -->
-            <div class="card-ornament p-6 bg-white delay-3">
+            <div class="card-ornament p-6 bg-white delay-3 md:col-span-2 lg:col-span-1 border-2 border-[#1a472a] shadow-lg">
                 <div class="top-right corner-decoration"></div>
                 <div class="top-left corner-decoration"></div>
                 <div class="bottom-right corner-decoration"></div>
                 <div class="bottom-left corner-decoration"></div>
 
                 <div class="text-center mb-4">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#1a472a] text-[#fdfbf7] mb-3 border-2 border-[#c5a059]">
                         <i data-lucide="shield-check" class="w-8 h-8"></i>
                     </div>
                     <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">التوحيد وعلم الكلام</h3>
+                    <p class="text-[#c5a059] font-bold font-ruqaa mt-1 text-lg">أ.د/ رجب خضر</p>
                 </div>
 
-                <!-- قسم تنبيهات الدكاترة -->
-                <div class="doctor-alert-box bg-gray-50 border-gray-300">
-                    <h4 class="text-gray-500 font-bold text-sm flex items-center gap-2 mb-1">
-                        <i data-lucide="bell-off" class="w-4 h-4"></i> تنبيهات الدكتور
+                <div class="bg-amber-50 border border-amber-200 rounded p-3 mb-4 text-sm">
+                    <h4 class="font-bold text-amber-800 flex items-center gap-2 mb-2">
+                        <i data-lucide="book-open" class="w-4 h-4"></i> الكتاب المقرر
                     </h4>
-                    <p class="text-gray-400 text-sm">
-                        لا توجد تنبيهات جديدة حالياً.
-                    </p>
+                    <p class="text-gray-800 mb-2"><strong>شرح المقاصد</strong> - للإمام سعد الدين التفتازاني.</p>
+                    <ul class="list-disc list-inside text-gray-600 text-xs space-y-1">
+                        <li>طبعة: د. عبدالرحمن عميرة (عالم الكتب) - <a href="https://t.me/c/3105560785/2/118" target="_blank" class="text-blue-600 hover:underline">رابط النسخة</a></li>
+                        <li>أو الطبعة السلطانية، أو طبعة النور المبين.</li>
+                        <li>نسخة الليسانس (تحقيق د. عواد) - <a href="https://t.me/c/3105560785/2/148" target="_blank" class="text-blue-600 hover:underline">رابط النسخة</a></li>
+                    </ul>
+                    <p class="text-[10px] text-gray-500 mt-2">* أشار الدكتور أن له تحقيق سيصدر قريباً.</p>
                 </div>
 
-                <div class="space-y-3">
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="book" class="w-4 h-4 text-[#c5a059]"></i> الكتب المقررة</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
+                <div class="space-y-2 max-h-60 overflow-y-auto custom-scrollbar">
+                    <h4 class="text-[#1a472a] font-bold text-sm border-b border-[#c5a059] pb-1 mb-2">سجل المحاضرات:</h4>
+                    
+                    <div class="bg-gray-50 p-2 rounded border-r-2 border-[#1a472a]">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-bold text-[#1a472a]">المحاضرة الأولى</span>
+                            <a href="https://t.me/c/3105560785/2/93" class="text-[10px] bg-blue-100 text-blue-800 px-1 rounded hover:bg-blue-200">تسجيل 🎧</a>
                         </div>
+                        <p class="text-xs text-gray-600 leading-snug">
+                            نبذة عن الإمام والسفر. تقسيم الكتاب ومقاصده.
+                            <br>بدأ من <strong>صـ 29</strong> (السمعيات) وتوقف عند <strong>صـ 35</strong>.
+                            <br><span class="text-[10px] text-gray-500">ملاحظة: النبوات جزء من السمعيات.</span>
+                        </p>
                     </div>
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="file-text" class="w-4 h-4 text-[#c5a059]"></i> التلخيصات</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
+
+                    <div class="bg-gray-50 p-2 rounded border-r-2 border-[#c5a059]">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-bold text-[#1a472a]">المحاضرة الثانية</span>
+                            <a href="https://t.me/c/3105560785/2/131" class="text-[10px] bg-blue-100 text-blue-800 px-1 rounded hover:bg-blue-200">تسجيل 🎧</a>
                         </div>
+                        <p class="text-xs text-gray-600 leading-snug">
+                            من <strong>صـ 35</strong> (العقل المائل للمحاسن...).
+                            <br>تم شرح: مذاهب إرسال الرسل، أصناف المنكرين وشبهاتهم والرد عليها.
+                            <br>توقف عند: <strong>صـ 38</strong>.
+                        </p>
                     </div>
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="mic" class="w-4 h-4 text-[#c5a059]"></i> التفريغات</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
+                </div>
+
+                <div class="mt-4 pt-2 border-t border-dashed border-gray-300 text-center">
+                    <p class="text-[10px] text-gray-400">آخر تحديث: 23 نوفمبر 2025 | حسين القذافي الأزهري</p>
                 </div>
             </div>
 
-            <!-- مادة 3: المنطق -->
             <div class="card-ornament p-6 bg-white delay-4">
-                <div class="top-right corner-decoration"></div>
-                <div class="top-left corner-decoration"></div>
-                <div class="bottom-right corner-decoration"></div>
-                <div class="bottom-left corner-decoration"></div>
-
+                <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
                 <div class="text-center mb-4">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]">
-                        <i data-lucide="scale" class="w-8 h-8"></i>
-                    </div>
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="scale" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">المنطق والمناظرة</h3>
                 </div>
-
-                 <!-- قسم تنبيهات الدكاترة -->
-                 <div class="doctor-alert-box bg-gray-50 border-gray-300">
-                    <h4 class="text-gray-500 font-bold text-sm flex items-center gap-2 mb-1">
-                        <i data-lucide="bell-off" class="w-4 h-4"></i> تنبيهات الدكتور
-                    </h4>
-                    <p class="text-gray-400 text-sm">
-                        لا توجد تنبيهات جديدة حالياً.
-                    </p>
+                <div class="doctor-alert-box bg-gray-50 border-gray-300">
+                    <h4 class="text-gray-500 font-bold text-sm flex items-center gap-2 mb-1"><i data-lucide="bell-off" class="w-4 h-4"></i> تنبيهات الدكتور</h4>
+                    <p class="text-gray-400 text-sm">لا توجد تنبيهات جديدة حالياً.</p>
                 </div>
-
-                <div class="space-y-3">
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="book" class="w-4 h-4 text-[#c5a059]"></i> الكتب المقررة</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="file-text" class="w-4 h-4 text-[#c5a059]"></i> التلخيصات</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="mic" class="w-4 h-4 text-[#c5a059]"></i> التفريغات</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                </div>
+                 <div class="text-center text-sm text-gray-400 mt-4">قريباً إضافة المزيد...</div>
             </div>
 
-            <!-- مادة 4: الملل والنحل -->
             <div class="card-ornament p-6 bg-white delay-5">
-                <div class="top-right corner-decoration"></div>
-                <div class="top-left corner-decoration"></div>
-                <div class="bottom-right corner-decoration"></div>
-                <div class="bottom-left corner-decoration"></div>
-
+                <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
                 <div class="text-center mb-4">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]">
-                        <i data-lucide="users" class="w-8 h-8"></i>
-                    </div>
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="users" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">الملل والنحل</h3>
                 </div>
-
-                 <!-- قسم تنبيهات الدكاترة -->
                  <div class="doctor-alert-box">
-                    <h4 class="text-red-700 font-bold text-sm flex items-center gap-2 mb-1">
-                        <i data-lucide="megaphone" class="w-4 h-4"></i> تنبيهات الدكتور
-                    </h4>
-                    <p class="text-gray-700 text-sm leading-relaxed">
-                        المحاضرة القادمة ملغية لظروف سفر الدكتور.
-                    </p>
+                    <h4 class="text-red-700 font-bold text-sm flex items-center gap-2 mb-1"><i data-lucide="megaphone" class="w-4 h-4"></i> تنبيهات الدكتور</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed">المحاضرة القادمة ملغية لظروف سفر الدكتور.</p>
                 </div>
-
-                <div class="space-y-3">
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="book" class="w-4 h-4 text-[#c5a059]"></i> الكتب المقررة</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="file-text" class="w-4 h-4 text-[#c5a059]"></i> التلخيصات</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="mic" class="w-4 h-4 text-[#c5a059]"></i> التفريغات</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                </div>
+                 <div class="text-center text-sm text-gray-400 mt-4">قريباً إضافة المزيد...</div>
             </div>
 
-            <!-- مادة 5: التصوف -->
             <div class="card-ornament p-6 bg-white md:col-span-2 lg:col-span-1 lg:col-start-2 delay-6">
-                <div class="top-right corner-decoration"></div>
-                <div class="top-left corner-decoration"></div>
-                <div class="bottom-right corner-decoration"></div>
-                <div class="bottom-left corner-decoration"></div>
-
+                <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
                 <div class="text-center mb-4">
-                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]">
-                        <i data-lucide="heart-handshake" class="w-8 h-8"></i>
-                    </div>
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="heart-handshake" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">التصوف الإسلامي</h3>
                 </div>
-
-                 <!-- قسم تنبيهات الدكاترة -->
                  <div class="doctor-alert-box bg-gray-50 border-gray-300">
-                    <h4 class="text-gray-500 font-bold text-sm flex items-center gap-2 mb-1">
-                        <i data-lucide="bell-off" class="w-4 h-4"></i> تنبيهات الدكتور
-                    </h4>
-                    <p class="text-gray-400 text-sm">
-                        لا توجد تنبيهات جديدة حالياً.
-                    </p>
+                    <h4 class="text-gray-500 font-bold text-sm flex items-center gap-2 mb-1"><i data-lucide="bell-off" class="w-4 h-4"></i> تنبيهات الدكتور</h4>
+                    <p class="text-gray-400 text-sm">لا توجد تنبيهات جديدة حالياً.</p>
                 </div>
-
-                <div class="space-y-3">
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="book" class="w-4 h-4 text-[#c5a059]"></i> الكتب المقررة</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="file-text" class="w-4 h-4 text-[#c5a059]"></i> التلخيصات</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                    <div class="resource-item">
-                        <div class="flex justify-between items-center p-3 rounded bg-gray-50 border border-gray-100 hover:bg-gray-100 transition-colors cursor-pointer">
-                            <span class="flex items-center gap-2 font-semibold"><i data-lucide="mic" class="w-4 h-4 text-[#c5a059]"></i> التفريغات</span>
-                            <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded border border-amber-200">قريباً</span>
-                        </div>
-                    </div>
-                </div>
+                 <div class="text-center text-sm text-gray-400 mt-4">قريباً إضافة المزيد...</div>
             </div>
 
         </div>
@@ -470,7 +338,6 @@
 
     </main>
 
-    <!-- التذييل -->
     <footer class="bg-[#1a472a] text-[#fdfbf7] py-6 mt-8 border-t-4 border-[#c5a059]">
         <div class="container mx-auto px-4 text-center">
             <p class="font-ruqaa text-lg mb-2">اللهم علمنا ما ينفعنا وانفعنا بما علمتنا وزدنا علماً</p>
@@ -479,13 +346,8 @@
     </footer>
 
     <script>
-        // تفعيل الأيقونات
         lucide.createIcons();
-
-        // تحديث السنة تلقائياً
         document.getElementById('year').textContent = new Date().getFullYear();
-
-        // رسالة التواصل
         function showContactMessage() {
             const msg = document.createElement('div');
             msg.className = 'fixed top-4 left-1/2 transform -translate-x-1/2 bg-[#c5a059] text-[#1a472a] px-6 py-3 rounded shadow-lg z-50 font-bold';
@@ -496,5 +358,3 @@
     </script>
 </body>
 </html>
-
-
