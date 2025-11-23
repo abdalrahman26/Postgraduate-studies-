@@ -117,6 +117,25 @@
             text-decoration: underline;
             color: #1a472a;
         }
+
+        /* تنسيق الرسالة التراثية */
+        .heritage-message {
+            background-color: #fdfbf7;
+            border: 1px solid #c5a059;
+            padding: 20px;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+        }
+        .heritage-message::before {
+            content: "﷽";
+            display: block;
+            font-family: 'Amiri', serif;
+            font-size: 1.5rem;
+            color: #1a472a;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body class="islamic-bg min-h-screen flex flex-col">
@@ -130,14 +149,21 @@
             </div>
             <h1 class="text-3xl md:text-5xl font-bold font-ruqaa mb-2 text-[#fdfbf7]">الدراسات العليا - الفرقة الثانية</h1>
             <p class="text-[#c5a059] text-xl mt-2 font-ruqaa">جامعة الأزهر الشريف - أمانة القاهرة (بنين)</p>
-            <p class="text-gray-300 text-sm mt-4 opacity-80 max-w-2xl mx-auto">
-                "وَمَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ"
-            </p>
         </div>
     </header>
 
     <main class="flex-grow container mx-auto px-4 py-10">
         
+        <div class="max-w-4xl mx-auto animate-[fadeInUp_1s_ease-out_0.2s_forwards] opacity-0">
+            <div class="heritage-message shadow-sm">
+                <h2 class="text-xl font-bold text-[#1a472a] mb-3 font-ruqaa">إعلان هام لطلاب العلم وحملة التراث</h2>
+                <p class="text-gray-700 leading-loose text-lg">
+                    "ولَمَّا كان التعاضدُ أيسرَ للسبل، فقد عزمنا -بعون الله- على تذليلِ الصعاب بتدشينِ مجموعاتٍ للتعاون في (التفريغات) و(التسجيلات).
+                    وليكونَ موقعُنا هو العِقدَ الناظمَ لهذا النَّثر، فقد تقرر أن يغدو هو المستودعَ الجامعَ لكلِّ شاردةٍ وواردة؛ فترقبوا ما يسرُّكم عليه، ودمتم في حفظ الله."
+                </p>
+            </div>
+        </div>
+
         <div class="max-w-5xl mx-auto mb-12">
             <div class="card-ornament updates-section p-0 overflow-hidden shadow-md delay-1">
                 <div class="bg-[#1a472a] p-3 flex items-center justify-between">
@@ -145,7 +171,7 @@
                         <i data-lucide="signpost" class="w-5 h-5 text-white"></i>
                         موقف المنهج الدراسي
                     </h3>
-                    <span class="bg-[#c5a059] text-[#1a472a] text-xs font-bold px-2 py-1 rounded">تحديث أسبوعي</span>
+                    <span class="bg-[#c5a059] text-[#1a472a] text-xs font-bold px-2 py-1 rounded">تحديث مستمر</span>
                 </div>
 
                 <div class="p-4 md:p-6 relative">
@@ -161,15 +187,10 @@
                                 </tr>
                             </thead>
                             <tbody class="text-gray-700">
-                                <tr class="border-b border-dashed border-gray-200 hover:bg-gray-50 transition-colors">
-                                    <td class="py-3 font-bold pl-4 text-[#1a472a]">الفلسفة الإسلامية</td>
-                                    <td class="py-3"><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-bold">صـ 45</span> <span class="text-sm text-gray-500 mr-1">(باب الكندي)</span></td>
-                                    <td class="py-3 text-red-600 text-sm">من صـ 30 إلى 35</td>
-                                </tr>
                                 <tr class="border-b border-dashed border-gray-200 bg-[#fdfbe9] hover:bg-amber-50 transition-colors">
                                     <td class="py-3 font-bold pl-4 text-[#1a472a] flex items-center gap-2">
                                         التوحيد وعلم الكلام
-                                        <span class="text-[10px] bg-red-500 text-white px-1 rounded animate-pulse">جديد</span>
+                                        <span class="text-[10px] bg-red-500 text-white px-1 rounded animate-pulse">نشط</span>
                                     </td>
                                     <td class="py-3">
                                         <div class="flex flex-col">
@@ -179,19 +200,25 @@
                                     </td>
                                     <td class="py-3 text-gray-400 text-sm">-</td>
                                 </tr>
+                                
+                                <tr class="border-b border-dashed border-gray-200 hover:bg-gray-50 transition-colors">
+                                    <td class="py-3 font-bold pl-4 text-[#1a472a]">الفلسفة الإسلامية</td>
+                                    <td class="py-3 text-gray-400 font-ruqaa">قريباً بإذن الله</td>
+                                    <td class="py-3 text-gray-400 text-sm">-</td>
+                                </tr>
                                 <tr class="border-b border-dashed border-gray-200 hover:bg-gray-50 transition-colors">
                                     <td class="py-3 font-bold pl-4 text-[#1a472a]">المنطق والمناظرة</td>
-                                    <td class="py-3"><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-bold">صـ 28</span></td>
-                                    <td class="py-3 text-red-600 text-sm">مقدمة المصنف</td>
+                                    <td class="py-3 text-gray-400 font-ruqaa">قريباً بإذن الله</td>
+                                    <td class="py-3 text-gray-400 text-sm">-</td>
                                 </tr>
                                 <tr class="border-b border-dashed border-gray-200 hover:bg-gray-50 transition-colors">
                                     <td class="py-3 font-bold pl-4 text-[#1a472a]">الملل والنحل</td>
-                                    <td class="py-3"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-sm font-bold border">لم تبدأ بعد</span></td>
+                                    <td class="py-3 text-gray-400 font-ruqaa">قريباً بإذن الله</td>
                                     <td class="py-3 text-gray-400 text-sm">-</td>
                                 </tr>
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="py-3 font-bold pl-4 text-[#1a472a]">التصوف الإسلامي</td>
-                                    <td class="py-3"><span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm font-bold">صـ 15</span></td>
+                                    <td class="py-3 text-gray-400 font-ruqaa">قريباً بإذن الله</td>
                                     <td class="py-3 text-gray-400 text-sm">-</td>
                                 </tr>
                             </tbody>
@@ -202,7 +229,7 @@
         </div>
 
         <div class="text-center mb-10 opacity-0 animate-[fadeIn_1s_ease-out_0.4s_forwards]">
-            <h2 class="text-2xl md:text-3xl font-bold header-title mb-3">المقررات الدراسية وتنبيهات الدكاترة</h2>
+            <h2 class="text-2xl md:text-3xl font-bold header-title mb-3">المقررات الدراسية</h2>
             <div class="divider-ornament">
                 <span class="text-2xl text-[#c5a059]">۞</span>
             </div>
@@ -216,11 +243,9 @@
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="brain-circuit" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">الفلسفة الإسلامية</h3>
                 </div>
-                <div class="doctor-alert-box">
-                    <h4 class="text-red-700 font-bold text-sm flex items-center gap-2 mb-1"><i data-lucide="megaphone" class="w-4 h-4"></i> تنبيهات الدكتور</h4>
-                    <p class="text-gray-700 text-sm leading-relaxed">نبه الدكتور على ضرورة حفظ مصطلحات الكندي صـ 22 للأهمية.</p>
+                <div class="text-center py-8">
+                    <p class="text-gray-400 font-ruqaa text-lg">سيتم رفع المحتوى قريباً...</p>
                 </div>
-                <div class="text-center text-sm text-gray-400 mt-4">قريباً إضافة المزيد...</div>
             </div>
 
             <div class="card-ornament p-6 bg-white delay-3 md:col-span-2 lg:col-span-1 border-2 border-[#1a472a] shadow-lg">
@@ -289,11 +314,9 @@
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="scale" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">المنطق والمناظرة</h3>
                 </div>
-                <div class="doctor-alert-box bg-gray-50 border-gray-300">
-                    <h4 class="text-gray-500 font-bold text-sm flex items-center gap-2 mb-1"><i data-lucide="bell-off" class="w-4 h-4"></i> تنبيهات الدكتور</h4>
-                    <p class="text-gray-400 text-sm">لا توجد تنبيهات جديدة حالياً.</p>
+                <div class="text-center py-8">
+                    <p class="text-gray-400 font-ruqaa text-lg">سيتم رفع المحتوى قريباً...</p>
                 </div>
-                 <div class="text-center text-sm text-gray-400 mt-4">قريباً إضافة المزيد...</div>
             </div>
 
             <div class="card-ornament p-6 bg-white delay-5">
@@ -302,11 +325,9 @@
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="users" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">الملل والنحل</h3>
                 </div>
-                 <div class="doctor-alert-box">
-                    <h4 class="text-red-700 font-bold text-sm flex items-center gap-2 mb-1"><i data-lucide="megaphone" class="w-4 h-4"></i> تنبيهات الدكتور</h4>
-                    <p class="text-gray-700 text-sm leading-relaxed">المحاضرة القادمة ملغية لظروف سفر الدكتور.</p>
+                <div class="text-center py-8">
+                    <p class="text-gray-400 font-ruqaa text-lg">سيتم رفع المحتوى قريباً...</p>
                 </div>
-                 <div class="text-center text-sm text-gray-400 mt-4">قريباً إضافة المزيد...</div>
             </div>
 
             <div class="card-ornament p-6 bg-white md:col-span-2 lg:col-span-1 lg:col-start-2 delay-6">
@@ -315,11 +336,9 @@
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="heart-handshake" class="w-8 h-8"></i></div>
                     <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">التصوف الإسلامي</h3>
                 </div>
-                 <div class="doctor-alert-box bg-gray-50 border-gray-300">
-                    <h4 class="text-gray-500 font-bold text-sm flex items-center gap-2 mb-1"><i data-lucide="bell-off" class="w-4 h-4"></i> تنبيهات الدكتور</h4>
-                    <p class="text-gray-400 text-sm">لا توجد تنبيهات جديدة حالياً.</p>
+                <div class="text-center py-8">
+                    <p class="text-gray-400 font-ruqaa text-lg">سيتم رفع المحتوى قريباً...</p>
                 </div>
-                 <div class="text-center text-sm text-gray-400 mt-4">قريباً إضافة المزيد...</div>
             </div>
 
         </div>
