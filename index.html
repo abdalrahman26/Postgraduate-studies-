@@ -350,9 +350,10 @@
         <div class="text-center p-6 bg-[#fcf8ec] rounded-lg border border-[#e5e0d3] shadow-sm max-w-2xl mx-auto opacity-0 animate-[fadeIn_1s_ease-out_1s_forwards]">
             <h4 class="text-xl font-bold text-[#1a472a] mb-2">هل لديك مواد للمشاركة؟</h4>
             <p class="text-gray-600 mb-4">ساهم في نشر العلم وشاركنا التلخيصات أو التفريغات لتعم الفائدة.</p>
-            <button onclick="showContactMessage()" class="bg-[#1a472a] hover:bg-[#143620] text-white py-2 px-6 rounded-full transition duration-300 font-bold shadow-md">
-                تواصل معنا للمساهمة
-            </button>
+            <a href="https://wa.me/201033869376" target="_blank" class="inline-flex items-center gap-2 bg-[#1a472a] hover:bg-[#143620] text-white py-2 px-6 rounded-full transition duration-300 font-bold shadow-md">
+                <span>تواصل معنا للمساهمة</span>
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
         </div>
 
     </main>
@@ -367,13 +368,7 @@
     <script>
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();
-        function showContactMessage() {
-            const msg = document.createElement('div');
-            msg.className = 'fixed top-4 left-1/2 transform -translate-x-1/2 bg-[#c5a059] text-[#1a472a] px-6 py-3 rounded shadow-lg z-50 font-bold';
-            msg.innerText = 'جزاكم الله خيراً! سيتم تفعيل رابط الإرسال قريباً.';
-            document.body.appendChild(msg);
-            setTimeout(() => msg.remove(), 3000);
-        }
+        // تم حذف دالة الرسالة القديمة لأن الرابط يعمل الآن بشكل مباشر
     </script>
 </body>
 </html>
