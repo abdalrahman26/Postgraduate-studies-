@@ -53,6 +53,10 @@
         .delay-4 { animation-delay: 0.4s; }
         .delay-5 { animation-delay: 0.5s; }
         .delay-6 { animation-delay: 0.6s; }
+        .delay-7 { animation-delay: 0.7s; }
+        .delay-8 { animation-delay: 0.8s; }
+        .delay-9 { animation-delay: 0.9s; }
+        .delay-10 { animation-delay: 1.0s; }
 
         @keyframes fadeInUp {
             to { opacity: 1; transform: translateY(0); }
@@ -148,7 +152,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#c5a059" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></svg>
             </div>
             <h1 class="text-3xl md:text-5xl font-bold font-ruqaa mb-2 text-[#fdfbf7]">الدراسات العليا - الفرقة الثانية</h1>
-            <p class="text-[#c5a059] text-xl mt-2 font-ruqaa">جامعة الأزهر الشريف - أمانة القاهرة (بنين)</p>
+            <p class="text-[#c5a059] text-xl mt-2 font-ruqaa">جامعة الأزهر الشريف - أمانة القاهرة (بنين) وأمانة طنطا</p>
         </div>
     </header>
 
@@ -163,15 +167,100 @@
                 </p>
             </div>
         </div>
-
+        
         <div class="max-w-5xl mx-auto mb-12">
+            <div class="text-center mb-10 opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+                <h2 class="text-2xl md:text-3xl font-bold header-title mb-3">موقف المنهج الدراسي - أمانة طنطا</h2>
+                <p class="text-sm text-gray-500">ملخص لما تم شرحه خلال الأسابيع الماضية</p>
+                <div class="divider-ornament">
+                    <span class="text-2xl text-[#c5a059]">۞</span>
+                </div>
+            </div>
+            
             <div class="card-ornament updates-section p-0 overflow-hidden shadow-md delay-1">
                 <div class="bg-[#1a472a] p-3 flex items-center justify-between">
                     <h3 class="text-lg md:text-xl font-bold text-[#c5a059] font-ruqaa flex items-center gap-2">
                         <i data-lucide="signpost" class="w-5 h-5 text-white"></i>
-                        موقف المنهج الدراسي
+                        ملخص مقررات طنطا
                     </h3>
                     <span class="bg-[#c5a059] text-[#1a472a] text-xs font-bold px-2 py-1 rounded">تحديث مستمر</span>
+                </div>
+
+                <div class="p-4 md:p-6 relative">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-right border-collapse">
+                            <thead>
+                                <tr class="border-b-2 border-[#c5a059] text-[#1a472a]">
+                                    <th class="pb-2 font-bold font-ruqaa text-lg pl-4">المادة</th>
+                                    <th class="pb-2 font-bold font-ruqaa text-lg">موقف الشرح</th>
+                                    <th class="pb-2 font-bold font-ruqaa text-lg text-red-700">تنبيهات هامة</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-700">
+                                <tr class="border-b border-dashed border-gray-200 bg-[#fdfbe9] hover:bg-amber-50 transition-colors">
+                                    <td class="py-3 font-bold pl-4 text-[#1a472a] flex items-center gap-2">
+                                        الفلسفة الحديثة
+                                        <span class="text-[10px] bg-green-500 text-white px-1 rounded">نشط</span>
+                                    </td>
+                                    <td class="py-3">
+                                        تم شرح **الفصل الأول** كاملاً (نظام مناقشة وتحضير).
+                                    </td>
+                                    <td class="py-3 text-red-700 text-sm">تحضير المحاضرة القادمة: الفصل الثاني (بيكون ومشكلة المنهج).</td>
+                                </tr>
+                                <tr class="border-b border-dashed border-gray-200 hover:bg-gray-50 transition-colors">
+                                    <td class="py-3 font-bold pl-4 text-[#1a472a]">الملل والنحل</td>
+                                    <td class="py-3">
+                                        تم شرح **الشيـعة** من ص 30 إلى ص 35 (من كتاب أبو زهرة).
+                                    </td>
+                                    <td class="py-3 text-red-700 text-sm">المقرر هو مجموع **أبحاث** يتم تسليمها 15-2-2026.</td>
+                                </tr>
+                                <tr class="border-b border-dashed border-gray-200 bg-[#fdfbe9] hover:bg-amber-50 transition-colors">
+                                    <td class="py-3 font-bold pl-4 text-[#1a472a]">التصوف الإسلامي</td>
+                                    <td class="py-3">
+                                        محاضرتان شملتا تعريفات التصوف وأجزاء من كتابي **نسق الخطاب** و **الحياة الروحية في الإسلام**.
+                                    </td>
+                                    <td class="py-3 text-gray-400 text-sm">-</td>
+                                </tr>
+                                <tr class="border-b border-dashed border-gray-200 hover:bg-gray-50 transition-colors">
+                                    <td class="py-3 font-bold pl-4 text-[#1a472a]">المنطق والمناظرة</td>
+                                    <td class="py-3">
+                                        تم شرح **تعريف القضية** و **القضية الحملية** وأجزائها وأقسامها.
+                                    </td>
+                                    <td class="py-3 text-gray-400 text-sm">-</td>
+                                </tr>
+                                <tr class="border-b border-dashed border-gray-200 bg-[#fdfbe9] hover:bg-amber-50 transition-colors">
+                                    <td class="py-3 font-bold pl-4 text-[#1a472a]">التوحيد</td>
+                                    <td class="py-3 text-gray-400 font-ruqaa">لم يحضر الدكتور بعد.</td>
+                                    <td class="py-3 text-gray-400 text-sm">-</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition-colors">
+                                    <td class="py-3 font-bold pl-4 text-[#1a472a]">اللغة الإنجليزية</td>
+                                    <td class="py-3 text-gray-400 font-ruqaa">لم تبدأ المحاضرات.</td>
+                                    <td class="py-3 text-gray-400 text-sm">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-5xl mx-auto mb-12">
+            <div class="text-center mb-10 opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+                <h2 class="text-2xl md:text-3xl font-bold header-title mb-3">موقف المنهج الدراسي - أمانة القاهرة</h2>
+                <p class="text-sm text-gray-500">ملخص لمقررات أمانة القاهرة (للمراجعة)</p>
+                <div class="divider-ornament">
+                    <span class="text-2xl text-[#c5a059]">۞</span>
+                </div>
+            </div>
+
+            <div class="card-ornament updates-section p-0 overflow-hidden shadow-md delay-2">
+                <div class="bg-[#1a472a] p-3 flex items-center justify-between">
+                    <h3 class="text-lg md:text-xl font-bold text-[#c5a059] font-ruqaa flex items-center gap-2">
+                        <i data-lucide="signpost" class="w-5 h-5 text-white"></i>
+                        ملخص مقررات القاهرة
+                    </h3>
+                    <span class="bg-[#c5a059] text-[#1a472a] text-xs font-bold px-2 py-1 rounded">آخر تحديث سابق</span>
                 </div>
 
                 <div class="p-4 md:p-6 relative">
@@ -228,16 +317,163 @@
             </div>
         </div>
 
-        <div class="text-center mb-10 opacity-0 animate-[fadeIn_1s_ease-out_0.4s_forwards]">
-            <h2 class="text-2xl md:text-3xl font-bold header-title mb-3">المقررات الدراسية</h2>
+        
+        <div class="text-center mb-10 opacity-0 animate-[fadeIn_1s_ease-out_0.5s_forwards]">
+            <h2 class="text-2xl md:text-3xl font-bold header-title mb-3">بطاقات المقررات التفصيلية</h2>
             <div class="divider-ornament">
                 <span class="text-2xl text-[#c5a059]">۞</span>
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="subjects-grid">
+
+        <h3 class="text-xl font-bold text-[#1a472a] mb-6 text-center border-b border-[#c5a059] pb-2 font-ruqaa">أمانة طنطا</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12" id="subjects-grid-tanta">
             
-            <div class="card-ornament p-6 bg-white delay-2">
+            <div class="card-ornament p-6 bg-white delay-3 border-2 border-[#1a472a] shadow-lg">
+                <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
+                
+                <div class="text-center mb-4">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#1a472a] text-[#fdfbf7] mb-3 border-2 border-[#c5a059]">
+                        <i data-lucide="brain-circuit" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">الفلسفة الحديثة</h3>
+                    <p class="text-[#c5a059] font-bold font-ruqaa mt-1 text-lg">أ.د/ عبدالغني الغريب</p>
+                </div>
+                
+                <div class="bg-amber-50 border border-amber-200 rounded p-3 mb-4 text-sm">
+                    <h4 class="font-bold text-amber-800 flex items-center gap-2 mb-2">
+                        <i data-lucide="book-open" class="w-4 h-4"></i> الكتاب المقرر
+                    </h4>
+                    <p class="text-gray-800">**دراسات في الفلسفة الحديثة** - د/ محمود حمدي زقزوق.</p>
+                </div>
+                
+                <div class="space-y-2">
+                    <h4 class="text-[#1a472a] font-bold text-sm border-b border-[#c5a059] pb-1 mb-2">ما تم شرحه ونظام الدراسة:</h4>
+                    <ul class="list-disc list-inside text-xs text-gray-600 space-y-1 pr-4">
+                        <li>نظام المحاضرة: **تحضير الموضوع والمناقشة**.</li>
+                        <li>تم شرح **الفصل الأول** كاملاً: مفهوم الفلسفة الحديثة، خصائص الفكر الفلسفي الحديث، عصر النهضة الأوروبية ومظاهره، التيارات الفلسفية في عصر النهضة.</li>
+                        <li>**تحضير المحاضرة القادمة:** الفصل الثاني (بيكون ومشكلة المنهج).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card-ornament p-6 bg-white delay-4">
+                <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
+                
+                <div class="text-center mb-4">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]">
+                        <i data-lucide="users" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">الملل والنحل</h3>
+                    <p class="text-[#c5a059] font-bold font-ruqaa mt-1 text-lg">أ.د/ رضا الدقيقي</p>
+                </div>
+                
+                <div class="bg-red-50 border border-red-200 rounded p-3 mb-4 text-sm">
+                    <h4 class="font-bold text-red-800 flex items-center gap-2 mb-2">
+                        <i data-lucide="file-text" class="w-4 h-4"></i> تنبيه هام - نظام المقرر
+                    </h4>
+                    <p class="text-gray-800">تم تحويل الموضوعات إلى **أبحاث**، والمقرر هو مجموع الأبحاث. **الموعد النهائي للتسليم: 15-2-2026**.</p>
+                </div>
+                
+                <div class="space-y-2">
+                    <h4 class="text-[#1a472a] font-bold text-sm border-b border-[#c5a059] pb-1 mb-2">ما تم شرحه:</h4>
+                    <div class="bg-gray-50 p-2 rounded border-r-2 border-[#1a472a]">
+                        <span class="text-xs font-bold text-[#1a472a]">موضوع: **الشيـعة**</span>
+                        <p class="text-xs text-gray-600 leading-snug mt-1">
+                            من كتاب **تاريخ المذاهب الإسلامية** للشيخ محمد أبو زهرة. تم الشرح من **صـ 30 إلى صـ 35**.
+                            <br>التوقف عند: **فرق المذهب الشيعي**.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-ornament p-6 bg-white delay-5">
+                <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
+                
+                <div class="text-center mb-4">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]">
+                        <i data-lucide="heart-handshake" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">التصوف الإسلامي</h3>
+                    <p class="text-[#c5a059] font-bold font-ruqaa mt-1 text-lg">أ.د/ جمال شلبي</p>
+                </div>
+                
+                <div class="space-y-3">
+                    <h4 class="text-[#1a472a] font-bold text-sm border-b border-[#c5a059] pb-1 mb-2">سجل المحاضرات:</h4>
+                    
+                    <div class="bg-gray-50 p-2 rounded border-r-2 border-[#1a472a]">
+                        <span class="text-xs font-bold text-[#1a472a]">المحاضرة الأولى</span>
+                        <ul class="list-disc list-inside text-xs text-gray-600 leading-snug mt-1 pr-4">
+                            <li>الكتاب: **نسق الخطاب على تحفة الأحباب جوهرة الألباب هذا الشاذلي أبو الحسن (جزء 1)**.</li>
+                            <li>تم الكلام في: **تعريفات التصوف**.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-2 rounded border-r-2 border-[#c5a059]">
+                        <span class="text-xs font-bold text-[#1a472a]">المحاضرة الثانية</span>
+                        <ul class="list-disc list-inside text-xs text-gray-600 leading-snug mt-1 pr-4">
+                            <li>تم الشرح من كتابي: **الحياة الروحية في الإسلام** و **نسق الخطاب على تحفة الأحباب...**.</li>
+                            <li>ختاماً: موضوع **تصوف علم لبواطن القلوب**.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-ornament p-6 bg-white delay-6">
+                <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
+                
+                <div class="text-center mb-4">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]">
+                        <i data-lucide="scale" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">المنطق والمناظرة</h3>
+                    <p class="text-[#c5a059] font-bold font-ruqaa mt-1 text-lg">أ.د/ محمد مصطفى</p>
+                </div>
+                
+                <div class="space-y-2">
+                    <h4 class="text-[#1a472a] font-bold text-sm border-b border-[#c5a059] pb-1 mb-2">ما تم شرحه:</h4>
+                    <ul class="list-disc list-inside text-xs text-gray-600 space-y-1 pr-4">
+                        <li>نبذة عن المنطق (مراجعة).</li>
+                        <li>**تعريف القضية**: شرح التعريف، أسماء القضية، أقسام القضية.</li>
+                        <li>**القضية الحملية**: تعريفها، أجزاؤها، أقسامها باعتبار الموضوع.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card-ornament p-6 bg-white delay-7">
+                <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
+                <div class="text-center mb-4">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">التوحيد وعلم الكلام (طنطا)</h3>
+                </div>
+                <div class="text-center py-8">
+                    <p class="text-gray-400 font-ruqaa text-lg">لم يحضر الدكتور بعد.</p>
+                </div>
+            </div>
+            
+            <div class="card-ornament p-6 bg-white delay-8">
+                <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
+                <div class="text-center mb-4">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]">
+                        <i data-lucide="globe" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold font-ruqaa text-[#1a472a]">اللغة الإنجليزية (طنطا)</h3>
+                </div>
+                <div class="text-center py-8">
+                    <p class="text-gray-400 font-ruqaa text-lg">لم تبدأ المحاضرات بعد.</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <h3 class="text-xl font-bold text-[#1a472a] mb-6 text-center border-b border-[#c5a059] pb-2 font-ruqaa">أمانة القاهرة (بنين)</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="subjects-grid-cairo">
+            
+            <div class="card-ornament p-6 bg-white delay-9">
                 <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
                 <div class="text-center mb-4">
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="brain-circuit" class="w-8 h-8"></i></div>
@@ -248,7 +484,7 @@
                 </div>
             </div>
 
-            <div class="card-ornament p-6 bg-white delay-3 md:col-span-2 lg:col-span-1 border-2 border-[#1a472a] shadow-lg">
+            <div class="card-ornament p-6 bg-white delay-10 md:col-span-2 lg:col-span-1 border-2 border-[#1a472a] shadow-lg">
                 <div class="top-right corner-decoration"></div>
                 <div class="top-left corner-decoration"></div>
                 <div class="bottom-right corner-decoration"></div>
@@ -270,7 +506,6 @@
                     <ul class="list-disc list-inside text-gray-600 text-xs space-y-1">
                         <li>طبعة: د. عبدالرحمن عميرة (عالم الكتب) - <a href="https://t.me/c/3105560785/2/118" target="_blank" class="text-blue-600 hover:underline">رابط النسخة</a></li>
                         <li>أو الطبعة السلطانية، أو طبعة النور المبين.</li>
-                        <li>نسخة الليسانس (تحقيق د. عواد) - <a href="https://t.me/c/3105560785/2/148" target="_blank" class="text-blue-600 hover:underline">رابط النسخة</a></li>
                     </ul>
                     <p class="text-[10px] text-gray-500 mt-2">* أشار الدكتور أن له تحقيق سيصدر قريباً.</p>
                 </div>
@@ -293,7 +528,7 @@
                     <div class="bg-gray-50 p-2 rounded border-r-2 border-[#c5a059]">
                         <div class="flex justify-between items-center mb-1">
                             <span class="text-xs font-bold text-[#1a472a]">المحاضرة الثانية</span>
-                            <a href="https://t.me/c/3105560785/2/131" class="text-[10px] bg-blue-100 text-blue-800 px-1 rounded hover:bg-blue-200">تسجيل 🎧</a>
+                            <a href="https://tme/c/3105560785/2/131" class="text-[10px] bg-blue-100 text-blue-800 px-1 rounded hover:bg-blue-200">تسجيل 🎧</a>
                         </div>
                         <p class="text-xs text-gray-600 leading-snug">
                             من <strong>صـ 35</strong> (العقل المائل للمحاسن...).
@@ -308,7 +543,7 @@
                 </div>
             </div>
 
-            <div class="card-ornament p-6 bg-white delay-4">
+            <div class="card-ornament p-6 bg-white delay-11">
                 <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
                 <div class="text-center mb-4">
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="scale" class="w-8 h-8"></i></div>
@@ -319,7 +554,7 @@
                 </div>
             </div>
 
-            <div class="card-ornament p-6 bg-white delay-5">
+            <div class="card-ornament p-6 bg-white delay-12">
                 <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
                 <div class="text-center mb-4">
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="users" class="w-8 h-8"></i></div>
@@ -330,7 +565,7 @@
                 </div>
             </div>
 
-            <div class="card-ornament p-6 bg-white md:col-span-2 lg:col-span-1 lg:col-start-2 delay-6">
+            <div class="card-ornament p-6 bg-white md:col-span-2 lg:col-span-1 lg:col-start-2 delay-13">
                 <div class="top-right corner-decoration"></div><div class="top-left corner-decoration"></div><div class="bottom-right corner-decoration"></div><div class="bottom-left corner-decoration"></div>
                 <div class="text-center mb-4">
                     <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#f0fdf4] text-[#1a472a] mb-3 border border-[#c5a059]"><i data-lucide="heart-handshake" class="w-8 h-8"></i></div>
@@ -347,7 +582,7 @@
              <span class="text-2xl text-[#c5a059]">۞</span>
         </div>
 
-        <div class="text-center p-6 bg-[#fcf8ec] rounded-lg border border-[#e5e0d3] shadow-sm max-w-2xl mx-auto opacity-0 animate-[fadeIn_1s_ease-out_1s_forwards]">
+        <div class="text-center p-6 bg-[#fcf8ec] rounded-lg border border-[#e5e0d3] shadow-sm max-w-2xl mx-auto opacity-0 animate-[fadeIn_1s_ease-out_1.5s_forwards]">
             <h4 class="text-xl font-bold text-[#1a472a] mb-2">هل لديك مواد للمشاركة؟</h4>
             <p class="text-gray-600 mb-4">ساهم في نشر العلم وشاركنا التلخيصات أو التفريغات لتعم الفائدة.</p>
             <a href="https://wa.me/201033869376" target="_blank" class="inline-flex items-center gap-2 bg-[#1a472a] hover:bg-[#143620] text-white py-2 px-6 rounded-full transition duration-300 font-bold shadow-md">
@@ -368,7 +603,6 @@
     <script>
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();
-        // تم حذف دالة الرسالة القديمة لأن الرابط يعمل الآن بشكل مباشر
     </script>
 </body>
 </html>
